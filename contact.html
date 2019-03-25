@@ -7,6 +7,116 @@
     <title>Contact Us</title>
 </head>
 <body>
-    
+<div class="wrapper">
+    <div class="top-section">
+        <header class="top-header">
+            <div class="no-toggle">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Blue BCIT logo with white text">
+                </a>
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            </div><!--end of no-toggle-->
+            
+            <nav class="navbar">
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="course_outline.html" class="nav-links">About</a>
+                </li>
+                <li>
+                    <a href="schedule.html" class="nav-links">Schedule</a>
+                </li>
+                <li>
+                    <a href="lessons.html" class="nav-links">Lessons</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-links">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </header>
+
+        <section class="banner">
+        <div class="banner-text">
+            <img src="images/bright-bulb-cropped.jpg" alt="Single lightbulb lit in a dark room">
+            <div class="page-title">
+                <h1>Contact Instructors</h1>
+            </div>
+        </div><!--end of banner-text-->
+        </section><!--end of banner-->
+    </div><!--end of top-section-->
+<main>
+    <header>
+        <h1>Inquiries For Instructors</h1>
+    </header>
+
+    <fieldset>
+        <legend><h1>Please fill in the form</h1></legend>
+        <form id="form-text-area" class="form-text-area" 
+        action="#0" method="post" name="form-text-area">
+            <label for="firstname">First Name: </label>
+            <input id="firstname" class="form-text-area" type="text" name="firstname" required>
+            <label for="lastname">Last Name: </label>
+            <input id="lastname" class="form-text-area" type="text" name="lastname" required>
+            <label for="email">Email: </label>
+            <input id="email" class="form-text-area" type="email" name="email" required>
+            <label for="id">BCIT Student Number: </label>
+            <input id="id" class="form-text-area" name="studentID" 
+            title="Must contain 9 characters starting with a letter 'a' followed by two zeroes and six numbers."
+            type="text" maxlength="9"> <!--nts: ask Michael how to specify pattern attribute-->
+        <!--</form>-->
+        <!-- <form id="form-radio" class="form-text-area" action="#0" method="post" name="form-radio"> -->
+            <label for="status">Status: </label><br>
+            <input id="info-radio-prospect" name="info-status" value="Prospective student" type="radio">
+            <label for="info-radio-prospect">Prospective student</label>
+            <br>
+            <input id="info-radio-current" name="info-status" value="Current student" type="radio">
+            <label for="info-radio-current">Current student</label>
+        <!-- </form> -->
+        <!-- <form id="form-text-area2" class="form-text-area" action="#0" method="post" name="form-text-area2"> -->
+            <label for="topic">Select a category: </label>
+            <select id="topic" name="topic" size="1">
+                <optgroup label="Prospective Students">
+                    <option>Materials required</option>
+                    <option>Pre-requisites</option>
+                    <option>Course accomodations</option>
+                    <option>Other</option>
+                </optgroup>
+                <optgroup label="Current students">
+                    <option>Weekly assignment issues</option>
+                    <option>Additional learning resources</option>
+                    <option>Notice of absence</option>
+                    <option>Exams/projects inquiry</option>
+                    <option>Other</option>
+                </optgroup>
+            </select>
+            <label for="inquiry">Inquiries and Comments About COMP 1950: </label>
+            <textarea id="inquiry" name="inquiry" required></textarea>
+
+            <input id="submit" name="submit" value="Submit" type="submit">
+        </form>
+    </fieldset>
+</main>
+<footer>
+    <section class="course-prog">
+        <h3>Additional Courses</h3>
+        <ul>
+            <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
+            <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
+        </ul>
+        <h3>Related Program</h3>
+        <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
+    </section><!--end of footer left section-->
+    <section class="reg-contact">
+        <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
+        <h3><a href="contact.html">Contact Us</a></h3>
+    </section>
+</footer>
+</div> <!--end of wrapper-->    
 </body>
+<!--need javascript to confirm sent form-->
 </html>
