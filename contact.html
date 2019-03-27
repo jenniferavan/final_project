@@ -57,7 +57,7 @@
     <fieldset>
         <legend><h1>Please fill in the form</h1></legend>
         <form id="form-text-area" class="form-text-area" 
-        action="#0" method="post" name="form-text-area">
+        action="index.html" method="post" name="form-text-area">
             <label for="firstname">First Name: </label>
             <input id="firstname" class="form-text-area" type="text" name="firstname" required>
             <label for="lastname">Last Name: </label>
@@ -67,7 +67,7 @@
             <label for="id">BCIT Student Number: </label>
             <input id="id" class="form-text-area" name="studentID" 
             title="Must contain 9 characters starting with a letter 'a' followed by two zeroes and six numbers."
-            type="text" maxlength="9"> <!--nts: ask Michael how to specify pattern attribute-->
+            type="text" maxlength="9" pattern="[Aa][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required> <!--nts: ask Michael how to specify pattern attribute-->
         <!--</form>-->
         <!-- <form id="form-radio" class="form-text-area" action="#0" method="post" name="form-radio"> -->
             <label for="status">Status: </label><br>
