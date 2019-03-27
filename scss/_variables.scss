@@ -10,9 +10,13 @@ $text-color-light: darkgrey;
 $brand-color-dark: darken($brand-color, 20);
 $brand-color-light: lighten($brand-color, 20);
 
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat);
+
 // Fonts
-$body-font: Georgia, Times, Times New Roman, serif;
-$heading-font: Tahoma, Verdana, Segoe, sans-serif;
+$body-font: 'Montserrat', sans-serif;
+$heading-font: 'Libre Baskerville', serif;
 // Typographic Defualts
 $line-height: 1.4;
 
