@@ -1,1 +1,153 @@
 //Styles for index page
+$grid__bp-md: 1100;
+
+.container {
+  max-width: $grid__bp-md * 1px;
+  margin: 0 auto;
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+  position: relative;
+  width: inherit;
+  img{
+    min-height: 100%;
+    object-fit: cover;
+  }
+  @media screen and (min-width: $tabletPortrait){
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $brand-color;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      transform: scale(0);
+      transition: .3s ease;
+    }
+    &:hover .overlay {
+      transform: scale(1);
+    }
+    .text {
+      color: white;
+      font-size: $sm-font;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 15px;
+    }
+  }
+}
+
+.info{
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+  "overview overview careers instructors"
+  "overview overview careers instructors"
+  "reviews reviews careers instructors"
+  "reviews reviews registration registration"
+  "courses courses registration registration"
+  "courses courses registration registration"
+}
+.container-01 {
+  grid-area: overview;
+}
+.container-02 {
+  grid-area: reviews;
+}
+.container-03{
+  grid-area: courses;
+}
+.container-04{
+  grid-area: careers;
+  @include fill;
+}
+.container-05{
+  grid-area: instructors;
+  @include fill;
+}
+.container-06{
+  grid-area: registration;
+  @include fill;
+}
+
+.banner{
+  position: relative;
+  margin-bottom: 10px;
+  @include fill;
+
+  h1{
+    width: 70%;
+    @include center-text;
+  }
+  @media screen and (max-width: 520px){
+    img{
+      width: 520px;
+      height: 200px;
+    }
+    h1{
+      font-size: $sm-font;
+    }
+  }
+}
+
+//media query - grid layout change
+@media screen and (max-width: $tabletPortrait) {
+  .container{
+    img{
+    width: 100%;
+    height: 200px;}
+  }
+  .info{
+    @include two-col;
+    grid-template-areas:
+    "overview reviews"
+    "overview reviews"
+    "courses careers"
+    "courses careers"
+    "instructors registration"
+    "instructors registration"
+  }
+  .text{
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    background-color: $brand-color-light;
+    min-height: 100%;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    p{
+      margin: 0;
+    }
+    h2{
+      text-align: center;
+      font-size: $lg-font;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  }
+}
+@media screen and (max-width: 520px){
+  .info{
+    @include one-col;
+    grid-template-areas:
+    "overview"
+    "reviews"
+    "courses"
+    "careers"
+    "instructors"
+    "registration"
+  }
+  .text{
+    height: 140px;
+  }
+
+}

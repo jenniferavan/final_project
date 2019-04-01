@@ -58,7 +58,7 @@
     <fieldset>
         <legend><h1>Please fill in the form</h1></legend>
         <form id="form-text-area" class="form-text-area" 
-        action="index.html" method="post" name="form-text-area">
+        action="thankyou.html" method="post" name="form-text-area">
             <label for="firstname">First Name: </label>
             <input id="firstname" class="form-text-area" type="text" name="firstname" required>
             <label for="lastname">Last Name: </label>
@@ -68,17 +68,15 @@
             <label for="id">BCIT Student Number: </label>
             <input id="id" class="form-text-area" name="studentID" 
             title="Must contain 9 characters starting with a letter 'a' followed by two zeroes and six numbers."
-            type="text" maxlength="9" pattern="[Aa][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required> <!--nts: ask Michael how to specify pattern attribute-->
-        <!--</form>-->
-        <!-- <form id="form-radio" class="form-text-area" action="#0" method="post" name="form-radio"> -->
+            type="text" maxlength="9" pattern="[Aa][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required>
+       
             <label for="status">Status: </label><br>
-            <input id="info-radio-prospect" name="info-status" value="Prospective student" type="radio">
-            <label for="info-radio-prospect">Prospective student</label>
+            <input id="info-radio-prospect" name="info-status" value="Prospective student" type="radio" class="radio">
+            <label for="info-radio-prospect" class="radio">Prospective student</label>
             <br>
-            <input id="info-radio-current" name="info-status" value="Current student" type="radio">
-            <label for="info-radio-current">Current student</label>
-        <!-- </form> -->
-        <!-- <form id="form-text-area2" class="form-text-area" action="#0" method="post" name="form-text-area2"> -->
+            <input id="info-radio-current" name="info-status" value="Current student" type="radio" class="radio">
+            <label for="info-radio-current" class="radio">Current student</label>
+       
             <label for="topic">Select a category: </label>
             <select id="topic" name="topic" size="1">
                 <optgroup label="Prospective Students">
@@ -119,5 +117,4 @@
 </footer>
 </div> <!--end of wrapper-->    
 </body>
-<!--need javascript to confirm sent form-->
 </html>

@@ -1,0 +1,68 @@
+//Styles for contact page
+h1{
+    text-align: center;
+    color: $brand-color;    
+}
+
+fieldset{
+    legend{
+        text-align: center;
+    }
+    background-color: rgba(211, 211, 211, 0.39);
+    #form-text-area{
+        input:not(.radio){
+            @include full-form;
+            height: 35px;
+            font-size: $sm-font;
+            border-radius: 5px;
+            width: 80%;
+            margin-bottom: 15px;
+            #{$link-hover-selector}{
+                border: 1px solid green;
+            }
+        }
+        label:not(.radio){
+            display: block;
+            margin-bottom: 10px;
+            color: $brand-color-dark;
+            font-weight: bold;
+        }
+        textarea{
+            height: 300px;
+            width: 80%;
+            @include full-form;
+            margin-bottom: 15px;
+            padding: 5px;
+            font-family: $body-font;
+        }
+        .radio{
+            margin-bottom: 30px;
+        }
+        #topic{
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        #submit{
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            color: white;
+            background-color: $brand-color-light;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 2px -2px $brand-color-light;
+            #{$link-hover-selector}{
+                background-color: rgba(0, 128, 0, 0.575);
+            }
+        }
+    }
+}
+
+//Thank you page
+.thanks{
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 2px 5px 3px lightgrey;
+    padding: $padding;
+}
