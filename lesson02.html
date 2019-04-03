@@ -6,19 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lesson 02</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="/scripts/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="#0">Home</a></li>
-                <li><a href="#0">About</a></li>
-                <li><a href="#0">Schedule</a></li>
-                <li><a href="#0">Lessons</a></li>
-                <li><a href="#0">Contact</a></li>
-            </ul>
-        </nav>
+        <header class="top-header">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Blue BCIT logo with white text"></a>
+                
+                <button class ="hamburger-menu">
+                    <span class="hamburger-menu-content" tabindex="-1">
+                        <span class="sr-only">Menu</span>
+                    <span class="bar"></span>
+                    </span>
+                </button>
+                            
+                <nav class="navbar">
+                    <ul class="main-nav" id="js-menu">
+                        <li>
+                            <a href="index.html" class="nav-links">Home</a>
+                                </li>
+                        <li>
+                            <a href="course_outline.html" class="nav-links">About</a>
+                        </li>
+                                <li>
+                            <a href="schedule.html" class="nav-links">Schedule</a>
+                        </li>
+                                <li>
+                            <a href="contact.html" class="nav-links">Contact</a>
+                                </li>
+                        </ul>
+                    </nav>
+            </header>
 
+    <main>
+    <div class="lessons-page">
     <h2>Agenda</h2>
         <ul>
             <li>Charsets
@@ -37,7 +59,7 @@
         
     <p> The W3C recommends the UTF-8 charset for web development. It includes an impressive array of languages and special characters, and is well supported in common devices. </p>
 
-    <h2> Assign Character Set </h2>
+    <h3> Assign Character Set </h3>
 
     <p> If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the meta tag to the head section of every HTML page: <br>
         &lt;meta charset="utf-8" /> </p>
@@ -53,7 +75,7 @@
                 </li>
         </ul>
     
-    <h2>HTML lang Attribute</h2>
+    <h3>HTML lang Attribute</h3>
     
     <p> Use the lang="" attribute to declare the language in HTML. This is usually applied to the html element. Assigning the appropriate language code will apply to all contained content, unless over-ridden with another lang="".<br>
         Use the language abbreviations from the standard ISO 639-1 code set (don't use ISO 639-2).</p>
@@ -81,10 +103,10 @@
                 </li>
         </ul>
     
-    <h2>HTML 4.01 template</h2>
+    <h3>HTML 4.01 template</h3>
     <p> The problem with the state of HTML then was its reputation as a loose language. Poorly structured code would be rendered differently across user agents, leading to forked code and less predictable results.</p>
 
-    <h2>XHTML</h2>
+    <h3>XHTML</h3>
     <p> The XHTML specification was the result of rewriting HTML 4.01 using the ruleset derived from XML </p>
 
         <ul>
@@ -106,7 +128,7 @@
                 </li>
         </ul>
     
-    <h2>XHTML Rules: </h2>
+    <h3>XHTML Rules: </h3>
 
         <ul>
             <li>All elements must be properly nested
@@ -379,7 +401,7 @@
                 <li>you may also wish to include a direct link for your users to download the file
                     </li>
                     </ul>
-        <p> &l6;audio controls="controls"> <br>
+        <p> &lt;audio controls="controls"> <br>
             &lt;source src="media/house-a-square.mpg" type="audio/mpeg" /> <br>
             &lt;source src="media/house-a-square.mp3" type="audio/mp3" /> <br>
             &lt;source src="media/house-a-square.ogg" type="audio/ogg" /><br>
@@ -444,7 +466,7 @@
                     </li>
                     </ul>
         
-        <h2>&lt;![endif]--></h2>
+        <h3> &lt;![endif]--></h3>
             <ul>
                 <li>Since HTML5 understands both HTML4 and XHTML tags, converting an older HTML file into HTML5 is simply a matter of updating the DOCTYPE and meta tag for charset.
                     </li>
@@ -457,23 +479,29 @@
                 <li>Review the HTML5 semantic tags, know how and when to use them to maxmize the semantic strucure of your HTML
                     </li>
                     </ul>
+    </div>
+    </main>
         
-                    <footer>
-                        <section class="course-prog">
-                            <h3>Additional Courses</h3>
-                            <ul>
-                                <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
-                                <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
-                            </ul>
-                            <h3>Related Program</h3>
-                            <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
-                        </section><!--end of footer left section-->
-                        <section class="reg-contact">
-                            <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
-                            <h3><a href="contact.html">Contact Us</a></h3>
-                        </section>
-                    </footer>
-        
+       <footer>
+             <section class="course-prog">
+                <h3>Additional Courses</h3>
+                                <ul>
+                                    <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
+                                    <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
+                                </ul>
+                                <h3>Related Program</h3>
+                                <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
+                            </section><!--end of footer left section-->
+                            <section class="reg-contact">
+                                <div>
+                                <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
+                                <h3><a href="contact.html">Contact Us</a></h3>
+                                </div>
+                                <div class="top-button">
+                                <button><a href="#top">top</a></button>
+                                </div>
+                            </section>
+                        </footer>
     
         </div>
     

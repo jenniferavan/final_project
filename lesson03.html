@@ -6,19 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lesson 03</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="#0">Home</a></li>
-                <li><a href="#0">About</a></li>
-                <li><a href="#0">Schedule</a></li>
-                <li><a href="#0">Lessons</a></li>
-                <li><a href="#0">Contact</a></li>
-            </ul>
-        </nav>
-    
+        <header class="top-header">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Blue BCIT logo with white text"></a>
+                
+                <button class ="hamburger-menu">
+                    <span class="hamburger-menu-content" tabindex="-1">
+                        <span class="sr-only">Menu</span>
+                    <span class="bar"></span>
+                    </span>
+                </button>
+                            
+                <nav class="navbar">
+                    <ul class="main-nav" id="js-menu">
+                        <li>
+                            <a href="index.html" class="nav-links">Home</a>
+                                </li>
+                        <li>
+                            <a href="course_outline.html" class="nav-links">About</a>
+                        </li>
+                                <li>
+                            <a href="schedule.html" class="nav-links">Schedule</a>
+                        </li>
+                                <li>
+                            <a href="contact.html" class="nav-links">Contact</a>
+                                </li>
+                        </ul>
+                    </nav>
+            </header>
+    <main>
+        <div class="lessons-page">
     <h2>Agenda</h2>
         <ul>
             <li>Referencing Stylesheets
@@ -528,7 +549,7 @@
             <li>Count the number of HTML tag names in the selector.
                 </li>
             </ol>
-    <p> Next, write the three numbers in exact order with no spaces or commas to obtain a three digit number. (Note, you may need to convert the numbers to a larger base to end up with three digits.) The final list of numbers corresponding to selectors will easily determine specificity with the higher numbers winning out over lower numbers. Following is a list of selectors sorted by specificity: </p>
+    <p> Next, write the three numbers in exact order with no spaces or commas to obtain a three digit number. (Note, you may need to convert the numbers to a larger base to end up with three digits.)The final list of numbers corresponding to selectors will easily determine specificity with the higher numbers winning out over lower numbers. Following is a list of selectors sorted by specificity: </p>
         <ul>
             <li>#id1 <br>
             /* id=1 class=0 HTML=0 --> specificity = 100 */
@@ -566,23 +587,29 @@
                 </li>
             </ul>
     
-    
+    </div>
+    </main>
             <footer>
-                <section class="course-prog">
-                    <h3>Additional Courses</h3>
-                    <ul>
-                        <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
-                        <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
-                    </ul>
-                    <h3>Related Program</h3>
-                    <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
-                </section><!--end of footer left section-->
-                <section class="reg-contact">
-                    <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
-                    <h3><a href="contact.html">Contact Us</a></h3>
-                </section>
-            </footer>
-        
+                    <section class="course-prog">
+                        <h3>Additional Courses</h3>
+                        <ul>
+                            <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
+                            <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
+                        </ul>
+                        <h3>Related Program</h3>
+                        <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
+                    </section><!--end of footer left section-->
+                    <section class="reg-contact">
+                        <div>
+                        <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
+                        <h3><a href="contact.html">Contact Us</a></h3>
+                        </div>
+                        <div class="top-button">
+                        <button><a href="#top">top</a></button>
+                        </div>
+                    </section>
+                </main>
+                </footer>
         </div>
     
 </body>

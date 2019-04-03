@@ -1,0 +1,43 @@
+// CSS or Course Outline/About page
+
+h2 {
+    border: none;
+    background-color: $brand-color;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    border: none;
+}
+
+main h3 {
+    background-color: $brand-color;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: $h3-font-size;
+}
+
+article .evaulation-table {
+    width: 100%;
+    height: auto;
+
+}
+.evaulation-table tr td {
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.evaulation-table th {
+    background: $brand-color;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-family: $heading-font;
+    font-size: $h3-font-size;
+    text-align: left;
+}

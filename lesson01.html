@@ -6,19 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lesson 01</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="/scripts/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <nav>
-            <ul>
-                <li><a href="#0">Home</a></li>
-                <li><a href="#0">About</a></li>
-                <li><a href="#0">Schedule</a></li>
-                <li><a href="#0">Lessons</a></li>
-                <li><a href="#0">Contact</a></li>
-            </ul>
-        </nav>
+    
+     <header class="top-header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Blue BCIT logo with white text"></a>
+            
+            <button class ="hamburger-menu">
+                <span class="hamburger-menu-content" tabindex="-1">
+                    <span class="sr-only">Menu</span>
+                <span class="bar"></span>
+                </span>
+            </button>
+                        
+            <nav class="navbar">
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="index.html" class="nav-links">Home</a>
+                            </li>
+                    <li>
+                        <a href="course_outline.html" class="nav-links">About</a>
+                    </li>
+                            <li>
+                        <a href="schedule.html" class="nav-links">Schedule</a>
+                    </li>
+                            <li>
+                        <a href="contact.html" class="nav-links">Contact</a>
+                            </li>
+                    </ul>
+                </nav>
+        </header>
+            
+
+        <h1>COMP 1950: Day 01</h1>
         
+        <main>
+        <div class="lessons-page">
         <h2>Agenda</h2>
         <ul>
             <li>Introductions
@@ -51,7 +77,9 @@
 
         <h2> Course Overview</h2>
         <p> Learn more about the course to help you determine if this is the right class for you.</p>
-        <p> Orientation: Sharefile </p>
+
+
+        <h3> Orientation: Sharefile </h3>
         <p>BCIT lab computers are re-imaged each day. Files you save on the local C: drive of a lab computer will be erased after the computer power is cycled.</p>
         <p> Options For Saving Files:</p>
         <ul>
@@ -63,12 +91,12 @@
                 </li>
         </ul>
 
-        <h2>Orientation: Course Materials</h2>
+        <h3>Orientation: Course Materials</h3>
         <p>COMP 1950 homework assignments, quizzes, in class exercises and example code can be accessed via Desire 2 Learn (D2L). Use your BCIT student number and password to access D2L. Course materials will become avilable as the course progresses. It is your responsibility to log in and download files as they become available.
         If you have difficulty gaining access, consult the D2L help documentation, or contact BCIT Tech help desk at 604-412-7444 (Toll free: 1-800-351-5533).
         </p>
         
-        <h2>Orientation: Web space</h2>
+        <h3>Orientation: Web space</h3>
        <p> Each student will get a personal webspace where you will publish your homework assignments. This is not a continuation of your COMP1850 site (if you had one). This site is primarily for you to house your exercises, assignments and group work. Make it a site that is usable and functional.</p>
             <ul>
                 <li>Your instructor will create webspaces for each of you.
@@ -117,13 +145,13 @@
         <h2> Tools: Visual Studio Code</h2>
         <p>There are several development tools to choose from. In COMP 1950 we will use the open source Integrated Devlopment Environment (IDE) from Microsoft called Visual Studio Code (VS Code). This is more than a simple text editor, it provides robust code editing, maintenance and testing features, as well as supporting plugins to further increase it's capabilities.</p>
         
-        <h2>Lab Computers </h2>
+        <h3>Lab Computers </h3>
         <p>VS Code should already be installed on COMP1950 lab computers. The executable is found at C:/Program Files/Microsoft VS Code/Code.exe </p>
 
-        <h2>Laptop / Home Desktop</h2>
+        <h3>Laptop / Home Desktop</h3>
         <p>Download VS Code for Windows, Mac or Linux.</p>
 
-        <h2> Exploring VS Code</h2>
+        <h3> Exploring VS Code</h3>
         <p>Your instructor will demonstrate some of it's capabilities in class. On your own time, you may wish to review the help documentation 'Get Started' section to give yourself a better understanding of some of the basic features and functions provided by VS Code.</p>
             <ul>
                 <li>Setup and basics of VS Code
@@ -188,7 +216,7 @@
             </ul>
         <p>Remember to test your work in as many browsers as you can! BrowserShots allows you to do basic testing for earlier versions of Chrome, Firefox, Safari, and Opera. If you need to test for early iterations of IE, try: Netrenderer </p>
 
-        <h2>Tools: Extensions</h2>
+        <h3>Tools: Extensions</h3>
         <p>Extensions can add more functionality and features to your development browser.</p>
 
         <p>The Web Developer Toolbar is available for Chrome, Firefox and Opera. Some useful features include:</p>
@@ -226,11 +254,11 @@
             </ul>
         
     
-        <h2>Browser Based Diagnostic Tools</h2>
+        <h3>Browser Based Diagnostic Tools</h3>
         <p>As web pages get more complex, it can become difficult figuring out what is going on. For example, CSS rules that override other CSS rules, if spread across several files, can be challenge to make sense of. Having a diagnostic tool to assist in developing will make it easier to examine every detail of web pages.<br>
         Most modern browsers have some kind of development environment that can be turned on or triggered via extensions and/or plug-ins.</p>
     
-        <H2>Browser Tools</H2>
+        <H3>Browser Tools</H3>
             <ul>
                 <li>Firefox
                     </li>
@@ -243,7 +271,7 @@
             </ul>
         <p>Get familiar with using one of these tools. They are invaluable for understanding code and for finding, diagnosing, and fixing problems with code. You will be required to use them in the classes ahead. Practice adding/editing/removing both HTML and CSS using your development browser's built in tools.</p>
 
-        <h2>Typical Features</h2>
+        <h3>Typical Features</h3>
             <ul>
                 <li>F12 key will toggle open/close the tools in most browsers
                     </li>
@@ -260,7 +288,7 @@
         <h2>Standards: W3C</h2>
         <p>Just as those who manufacture physical goods are expected to follow the International Organization for Standards (ISO), web developers are expected to adhere to the standards described by the World Wide Web Consortium (W3C)</p>
         
-        <h2>W3C: World Wide Web Consortium</h2>
+        <h3>W3C: World Wide Web Consortium</h3>
             <ul>
                 <li>Web standards have gone through the same process that the ISO went through
                     </li>
@@ -280,7 +308,7 @@
                 </li>
             </ul>
 
-        <h2>W3C Goals</h2>
+        <h3>W3C Goals</h3>
             <ol>
                 <li>Universal Access: To make the Web accessible to all by promoting technologies that take into account the vast differences in culture, languages, education, ability, material resources, access devices, and physical limitations of users on all continents;
                     </li>
@@ -306,7 +334,7 @@
                     </li>
             </ul>
 
-        <h2>Discussion:</h2>
+        <h3>Discussion:</h3>
             <ul>
                 <li>What is the current W3C recommended version for HTML?
                     </li>
@@ -329,7 +357,7 @@
             </ol>
 
         
-        <h2> Requirements</h2>
+        <h3> Requirements</h3>
             <ul>
                 <li>HTML + CSS + DOM = Agile Web Sites
                     </li>
@@ -389,11 +417,13 @@
         <h2> Standards: Code Style and Organization</h2>
         <p>In COMP1950 students are expected to present a readable, well organized code style:</p>
             <ul>
-                <li>Comment all code with your name (or nickname if you prefer). Do this for all text based files (.html, .css, .js, .php, etc)
+                <li>Comment all code with your name (or nickname if you prefer). Do this for all text based files (.html, .css, .js, .php, etc) <br>
+                    <img src="images/day01/css_commenting.png" alt="html comments">
                     </li>
                 <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.
                     </li>
-                <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your .html files as well. 
+                <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your .html files as well. <br>
+                    <img src="/images/day01/folder_structure.png" alt="folder structure">
                     </li>
                 <li>Use the .html extension for all HTML files (not .htm). Use the typical extension for all other text based files.
                     </li>
@@ -409,7 +439,7 @@
         <h2>Semantic Markup</h2>
         <p>Highly semantic HTML content is crucial for usability, accessibilty and search engine optimization.</p>
 
-        <h2>What is Semantic Markup?</h2>
+        <h3>What is Semantic Markup?</h3>
             <ul>
                 <li>The practice of organizing your content into a structured hierarchy
                     </li>
@@ -429,7 +459,7 @@
                     </li>
             </ul>
         
-        <h2>Building Content Relationships</h2>
+        <h3>Building Content Relationships</h3>
             <ul>
                 <li>Use appropriate tags for headings, content, sub-content, lists
                     </li>
@@ -443,7 +473,7 @@
                     </li>
             </ul>
         
-        <h2>Logical vs. Physical Styles</h2>
+        <h3>Logical vs. Physical Styles</h3>
             <ul>
                 <li>Tend to display identically in browsers, but are fundamentally different
                     </li>
@@ -469,7 +499,7 @@
                 </li>
             </ul>
 
-        <h2>Logical Styling</h2>
+        <h3>Logical Styling</h3>
             <ul>
                 <li>Best way to markup content for long-term usage
                     </li>
@@ -509,7 +539,7 @@
                     </li>
                 </ul>
 
-        <h2>Key Advantages Of Semantic Content</h2>
+        <h3>Key Advantages Of Semantic Content</h3>
             <ul>
                 <li>Content is relational - context can be determined easily
                     </li>
@@ -550,22 +580,29 @@
                 </li>
             </ul>
         <p>...and yes, there will be a practical, open book quiz at the start of session #2! (hint: practice using a browser based diagnostic tool)</p>
+        </div>
+        </main>
         
         <footer>
-            <section class="course-prog">
-                <h3>Additional Courses</h3>
-                <ul>
-                    <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
-                    <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
-                </ul>
-                <h3>Related Program</h3>
-                <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
-            </section><!--end of footer left section-->
-            <section class="reg-contact">
-                <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
-                <h3><a href="contact.html">Contact Us</a></h3>
-            </section>
-        </footer>
+                <section class="course-prog">
+                    <h3>Additional Courses</h3>
+                    <ul>
+                        <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
+                        <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
+                    </ul>
+                    <h3>Related Program</h3>
+                    <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
+                </section><!--end of footer left section-->
+                <section class="reg-contact">
+                    <div>
+                    <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
+                    <h3><a href="contact.html">Contact Us</a></h3>
+                    </div>
+                    <div class="top-button">
+                    <button><a href="#top">top</a></button>
+                    </div>
+                </section>
+            </footer>
     </div>   
 </body>
 </html>

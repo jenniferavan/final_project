@@ -6,21 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Course Outline</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="/scripts/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-      
-            <nav>
-                <ul>
-                    <li><a href="#0">Home</a></li>
-                    <li><a href="#0">About</a></li>
-                    <li><a href="#0">Schedule</a></li>
-                    <li><a href="#0">Lessons</a></li>
-                    <li><a href="#0">Contact</a></li>
-                </ul>
-            </nav>
+        <header class="top-header">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Blue BCIT logo with white text"></a>
+                
+                <button class ="hamburger-menu">
+                    <span class="hamburger-menu-content" tabindex="-1">
+                        <span class="sr-only">Menu</span>
+                    <span class="bar"></span>
+                    </span>
+                </button>
+                            
+                <nav class="navbar">
+                    <ul class="main-nav" id="js-menu">
+                        <li>
+                            <a href="index.html" class="nav-links">Home</a>
+                                </li>
+                        <li>
+                            <a href="course_outline.html" class="nav-links">About</a>
+                        </li>
+                                <li>
+                            <a href="schedule.html" class="nav-links">Schedule</a>
+                        </li>
+                                <li>
+                            <a href="contact.html" class="nav-links">Contact</a>
+                                </li>
+                        </ul>
+                    </nav>
+            </header>
 
-    <h1>Course Overview</h1>
+    
+    <section class="banner">
+        <div class="banner-text">
+            <img src="images/banner-course-outline-page.jpg" alt="Laptop with code and notebook">
+            <div class="page-title">
+                <h1>Course Overview</h1>
+            </div>
+        </div>
+        </section>
+    
+    <main> 
 
     <h2>Course: Comp 1950</h2>
     <p>Length: 12 x 3 hr classes (36 hours total)</p>
@@ -31,7 +60,7 @@
     <p>This hands-on course follows on from COMP 1850 Applied Web Development Level 1. Students who already understand HTML and CSS will explore web development in more depth with new topics and techniques. Participants will gain a deeper understanding of the latest technologies including HTML5 and CSS3 for developing web sites and applications. There is a focus on responsive design and mobile presentation through the use of Media Queries. Adding behavior to web sites using JavaScript frameworks such as jQuery is introduced. Labs and exercises focus on industry standard web development methodology. Students gain experience creating templates for content management systems and presentation. Additional topics will include: source control for managing your code, and web-based fonts for professional typography. By the end of this course successful students will be able to build dynamic and semantically marked-up content that is viewable on mobile and desktop screen sizes. 
     </p>
 
-    <h2>Course Goals: </h2>
+    <h3>Course Goals: </h3>
     <ul>
         <li> To gain a deeper understanding of HTML, CSS and advanced topics in web development.
             </li>
@@ -69,7 +98,7 @@
         </article>
 
         <article>
-        <table>
+        <table class="evaulation-table">
             <tr>
                 <th colspan="2">Evaulation Criteria</th>
                 </tr>
@@ -100,22 +129,27 @@
         </table>
     </article>
             
-   
+</main>
 <footer>
-    <section class="course-prog">
-        <h3>Additional Courses</h3>
-        <ul>
-            <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
-            <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
-        </ul>
-        <h3>Related Program</h3>
-        <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
-    </section><!--end of footer left section-->
-    <section class="reg-contact">
-        <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
-        <h3><a href="contact.html">Contact Us</a></h3>
-    </section>
-</footer>
+        <section class="course-prog">
+            <h3>Additional Courses</h3>
+            <ul>
+                <li><a href="https://www.bcit.ca/study/courses/comp2015" target="_blank">COMP 2015</a></li>
+                <li><a href="https://www.bcit.ca/study/courses/comp2052" target="_blank">COMP 2052</a></li>
+            </ul>
+            <h3>Related Program</h3>
+            <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
+        </section><!--end of footer left section-->
+        <section class="reg-contact">
+            <div>
+            <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
+            <h3><a href="contact.html">Contact Us</a></h3>
+            </div>
+            <div class="top-button">
+            <button><a href="#top">top</a></button>
+            </div>
+        </section>
+    </footer>
 </div>
 </body>
 </html>

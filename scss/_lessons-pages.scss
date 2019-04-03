@@ -1,0 +1,30 @@
+// CSS for lesson notes pages
+
+h1 {
+    border-top: 1px solid $brand-color;
+    border-bottom: 1px solid $brand-color;
+    padding: 10px 0px;
+}
+
+main {
+    border: none;
+
+    .lessons-page h2 {
+        border: none;
+        background-color: $brand-color;
+        color: white;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: $h3-font-size;
+}
+
+.lessons-page h3 {
+    background-color: $brand-color;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: $h3-font-size;
+}
+}
