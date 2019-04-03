@@ -21,14 +21,17 @@ for (i = 0; i < acc.length; i++) {
 // Menu
 
 const body = document.body;
+const menu = document.getElementById('menu');
+
 const hamburger = document.querySelector('.hamburger-menu');
 const bar = document.querySelector('.bar');
-
+const nav = document.getElementsByClassName('navbar');
 hamburger.addEventListener('click', showMenu);
 
 function showMenu(){
     body.classList.toggle('show');
     bar.classList.toggle('animate');
+    nav.classList.add('activated');
 }
 
 

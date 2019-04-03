@@ -13,9 +13,10 @@
             transition: all 0.5s ease; 
         }
 
-        a:hover, a:active {
+        a:hover, a:active, a:focus {
             color: gray;
             transform: scale(1.25);
+            outline:none;
         }
 
         ul {
@@ -51,7 +52,6 @@ button {
 	border: none;
 	cursor: pointer;
 	align-self: center; 
-	//float: right;
 	display: none;
   }
   
@@ -191,12 +191,12 @@ button {
           transition: all 0.3s ease-in-out;
          }
 
-         button.hamburger-menu:focus, .hamburger-menu-content:focus {
+         button.hamburger-menu:focus {
              outline: none;
          }
 
          button.hamburger-menu:focus .hamburger-menu-content {
-             outline: 5px solid black;
+             outline: 2px solid rgba(0, 0, 0, 0.315);
          }
 
          .show button.hamburger-menu .bar {
@@ -221,12 +221,17 @@ button {
              transition: height 0.4s ease;
          }
 
+         nav.activated {
+             transition: visibility 0.3s, tansform 0.3s ease;
+         }
+
          .show nav{
              height: 336px;
              width: 100%; 
             
 
          }
+
 
          nav ul{
              display: flex;
