@@ -10,35 +10,33 @@
 <body>
 <div class="wrapper">
     <div class="top-section">
-        <header class="top-header">
-            <div class="no-toggle">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="Blue BCIT logo with white text">
-                </a>
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-            </div><!--end of no-toggle-->
+    <header class="top-header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Blue BCIT logo with white text"></a>
             
+            <button class ="hamburger-menu">
+                <span class="hamburger-menu-content" tabindex="-1">
+                    <span class="sr-only">Menu</span>
+                <span class="bar"></span>
+                </span>
+            </button>
+                        
             <nav class="navbar">
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="index.html" class="nav-links">Home</a>
-                </li>
-                <li>
-                    <a href="course_outline.html" class="nav-links">About</a>
-                </li>
-                <li>
-                    <a href="schedule.html" class="nav-links">Schedule</a>
-                </li>
-                <li>
-                    <a href="lessons.html" class="nav-links">Lessons</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav-links">Contact</a>
-                </li>
-            </ul>
-            </nav>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="index.html" class="nav-links">Home</a>
+                            </li>
+                    <li>
+                        <a href="course_outline.html" class="nav-links">About</a>
+                    </li>
+                            <li>
+                        <a href="schedule.html" class="nav-links">Schedule</a>
+                    </li>
+                            <li>
+                        <a href="contact.html" class="nav-links">Contact</a>
+                            </li>
+                    </ul>
+                </nav>
         </header>
     
     <section class="banner">
@@ -203,8 +201,13 @@
         <a href="https://www.bcit.ca/study/programs/6957acert" target="_blank">Applied Web Development Associate Certificate</a>
     </section><!--end of footer left section-->
     <section class="reg-contact">
+        <div>
         <h3><a href="https://www.bcit.ca/study/courses/comp1950" target="_blank">Registration</a></h3>
         <h3><a href="contact.html">Contact Us</a></h3>
+        </div>
+        <div class="top-button">
+        <button><a href="#top">top</a></button>
+        </div>
     </section>
 </footer>
 </div><!--end of wrapper-->

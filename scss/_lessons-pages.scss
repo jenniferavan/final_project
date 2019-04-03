@@ -1,6 +1,7 @@
 // CSS for lesson notes pages
 
-h1 {
+
+.lessons-page h1 {
     border-top: 1px solid $brand-color;
     border-bottom: 1px solid $brand-color;
     padding: 10px 0px;
@@ -8,6 +9,8 @@ h1 {
 
 main {
     border: none;
+    max-width: $desktopMedium;
+    word-wrap: break-word;
 
     .lessons-page h2 {
         border: none;
@@ -17,6 +20,8 @@ main {
         padding-top: 5px;
         padding-bottom: 5px;
         font-size: $h3-font-size;
+
+
 }
 
 .lessons-page h3 {
@@ -27,4 +32,8 @@ main {
     padding-bottom: 5px;
     font-size: $h3-font-size;
 }
+
+
 }
+
+
